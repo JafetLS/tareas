@@ -46,8 +46,8 @@ export default function DateTabs() {
                   <Tab label="Diciembre" value="12" />
                </Tabs>
             </Box>
+            <TareaCheck></TareaCheck>
             <TabPanel value="1">
-               <TareaCheck></TareaCheck>
                <div>{JSON.stringify(tareas)}</div>
             </TabPanel>
             <TabPanel value="2">Item Two</TabPanel>
