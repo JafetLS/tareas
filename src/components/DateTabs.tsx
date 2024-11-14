@@ -49,8 +49,19 @@ export default function DateTabs() {
                      tareas={mes.tareas}
                      label={mes.mes}
                      key={mes.mes}
+                     todas
                   />
                ))}
+            </TabPanel>
+            
+            <TabPanel value="1">
+             
+                  <TareaCheck
+                     tareas={tareas[0].tareas}
+                     label={tareas[0].mes}
+                     key={tareas[0].mes}
+                  />
+              
             </TabPanel>
          </TabContext>
       </div>

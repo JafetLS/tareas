@@ -8,15 +8,20 @@ import { tareasType } from '@/source/tareas';
 interface TareaCheckProps {
    tareas: tareasType[];
    label: string;
+   todas?: boolean;
 }
 
-export default function TareaCheck({ tareas, label }: TareaCheckProps) {
+export default function TareaCheck({ tareas, label, todas=false }: TareaCheckProps) {
    return (
       <FormGroup>
-         <FormControlLabel
-            control={<Checkbox defaultChecked />}
-            label={label}
-         />
+
+        {todas && (
+          <FormControlLabel
+          control={<Checkbox defaultChecked />}
+          label={label}
+       />
+        )}
+         
          {tareas.map((tarea: tareasType) => (
             <FormControlLabel
                control={<Checkbox />}
