@@ -1,17 +1,15 @@
-'use client';
 import * as React from 'react';
-import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import TabPanel from '@mui/lab/TabPanel';
-import { TabContext } from '@mui/lab';
-import TareaCheck from './TareaCheck';
+import { TabContext, TabList } from '@mui/lab';
 import tareas from '@/source/tareas.json';
+import TareaCheck from './TareaCheck';
 
 export default function DateTabs() {
-   const [value, setValue] = React.useState(0);
+   const [value, setValue] = React.useState('0');
 
-   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
       setValue(newValue);
    };
 
@@ -24,14 +22,13 @@ export default function DateTabs() {
                   bgcolor: 'background.paper',
                }}
             >
-               <Tabs
-                  value={value}
+               <TabList
                   onChange={handleChange}
                   variant="scrollable"
                   scrollButtons
-                  allowScrollButtonsMobile
                   aria-label="scrollable force tabs example"
                >
+                  <Tab label="Todas" value="0" />
                   <Tab label="Enero" value="1" />
                   <Tab label="Febrero" value="2" />
                   <Tab label="Marzo" value="3" />
@@ -44,14 +41,17 @@ export default function DateTabs() {
                   <Tab label="Octubre" value="10" />
                   <Tab label="Noviembre" value="11" />
                   <Tab label="Diciembre" value="12" />
-               </Tabs>
+               </TabList>
             </Box>
-            <TareaCheck></TareaCheck>
-            <TabPanel value="1">
-               <div>{JSON.stringify(tareas)}</div>
+            <TabPanel value="0">
+               {tareas.map((mes) => (
+                  <TareaCheck
+                     tareas={mes.tareas}
+                     label={mes.mes}
+                     key={mes.mes}
+                  />
+               ))}
             </TabPanel>
-            <TabPanel value="2">Item Two</TabPanel>
-            <TabPanel value="3">Item Three</TabPanel>
          </TabContext>
       </div>
    );

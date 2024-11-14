@@ -1,20 +1,15 @@
-import DateTabs from "@/components/DateTabs";
-import { Typography } from "@mui/material";
-import Image from "next/image";
+'use client';
+import DateTabs from '@/components/DateTabs';
+import { Typography } from '@mui/material';
 
 export default function Home() {
-  return (
-    <div>
-     <Typography variant="h2" component="h2">
-     Gestión de tareas
+   return (
+      <div>
+         <Typography variant="h2" component="h2">
+            Gestión de tareas
+         </Typography>
 
-</Typography>
-
-        
-    <DateTabs>
-      
-    </DateTabs>
-      
-    </div>
-  );
+         <DateTabs></DateTabs>
+      </div>
+   );
 }
