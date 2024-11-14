@@ -5,6 +5,7 @@ import TabPanel from '@mui/lab/TabPanel';
 import { TabContext, TabList } from '@mui/lab';
 import tareas from '@/source/tareas.json';
 import TareaCheck from './TareaCheck';
+import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
 
 export default function DateTabs() {
    const [value, setValue] = React.useState('0');
@@ -16,6 +17,7 @@ export default function DateTabs() {
    return (
       <div>
          <TabContext value={value}>
+            <LibraryAddIcon />
             <Box
                sx={{
                   maxWidth: { xs: 320, sm: 480 },
@@ -53,15 +55,13 @@ export default function DateTabs() {
                   />
                ))}
             </TabPanel>
-            
+
             <TabPanel value="1">
-             
-                  <TareaCheck
-                     tareas={tareas[0].tareas}
-                     label={tareas[0].mes}
-                     key={tareas[0].mes}
-                  />
-              
+               <TareaCheck
+                  tareas={tareas[0].tareas}
+                  label={tareas[0].mes}
+                  key={tareas[0].mes}
+               />
             </TabPanel>
          </TabContext>
       </div>
