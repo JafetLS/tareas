@@ -1,0 +1,218 @@
+[
+   {
+      "id": 1,
+      "mes": "Enero",
+      "tareas": [
+         {
+            "id": 1,
+            "titulo": "Tarea 1",
+            "descripcion": "Descripción de la tarea 1",
+            "completada": false
+         },
+         {
+            "id": 2,
+            "titulo": "Tarea 2",
+            "descripcion": "Descripción de la tarea 2",
+            "completada": false
+         },
+         {
+            "id": 3,
+            "titulo": "Tarea 3",
+            "descripcion": "Descripción de la tarea 3",
+            "completada": false
+         }
+      ]
+   },
+   {
+      "id": 2,
+      "mes": "Febrero",
+      "tareas": [
+         {
+            "id": 1,
+            "titulo": "Tarea 1",
+            "descripcion": "Descripción de la tarea 1",
+            "completada": false
+         },
+         {
+            "id": 2,
+            "titulo": "Tarea 2",
+            "descripcion": "Descripción de la tarea 2",
+            "completada": false
+         },
+         {
+            "id": 3,
+            "titulo": "Tarea 3",
+            "descripcion": "Descripción de la tarea 3",
+            "completada": false
+         }
+      ]
+   },
+   {
+      "id": 3,
+      "mes": "Marzo",
+      "tareas": [
+         {
+            "id": 1,
+            "titulo": "Tarea 1",
+            "descripcion": "Descripción de la tarea 1",
+            "completada": false
+         },
+         {
+            "id": 2,
+            "titulo": "Tarea 2",
+            "descripcion": "Descripción de la tarea 2",
+            "completada": false
+         },
+         {
+            "id": 3,
+            "titulo": "Tarea 3",
+            "descripcion": "Descripción de la tarea 3",
+            "completada": false
+         }
+      ]
+   },
+   {
+      "id": 4,
+      "mes": "Abril",
+      "tareas": [
+         {
+            "id": 1,
+            "titulo": "Tarea 1",
+            "descripcion": "Descripción de la tarea 1",
+            "completada": false
+         },
+         {
+            "id": 2,
+            "titulo": "Tarea 2",
+            "descripcion": "Descripción de la tarea 2",
+            "completada": false
+         },
+         {
+            "id": 3,
+            "titulo": "Tarea 3",
+            "descripcion": "Descripción de la tarea 3",
+            "completada": false
+         }
+      ]
+   },
+   {
+      "id": 5,
+      "mes": "Mayo",
+      "tareas": [
+         {
+            "id": 1,
+            "titulo": "Tarea 1",
+            "descripcion": "Descripción de la tarea 1",
+            "completada": false
+         },
+         {
+            "id": 2,
+            "titulo": "Tarea 2",
+            "descripcion": "Descripción de la tarea 2",
+            "completada": false
+         },
+         {
+            "id": 3,
+            "titulo": "Tarea 3",
+            "descripcion": "Descripción de la tarea 3",
+            "completada": false
+         }
+      ]
+   },
+   {
+      "id": 6,
+      "mes": "Junio",
+      "tareas": [
+         {
+            "id": 1,
+            "titulo": "Tarea 1",
+            "descripcion": "Descripción de la tarea 1",
+            "completada": false
+         },
+         {
+            "id": 2,
+            "titulo": "Tarea 2",
+            "descripcion": "Descripción de la tarea 2",
+            "completada": false
+         },
+         {
+            "id": 3,
+            "titulo": "Tarea 3",
+            "descripcion": "Descripción de la tarea 3",
+            "completada": false
+         }
+      ]
+   },
+   {
+      "id": 7,
+      "mes": "Julio",
+      "tareas": [
+         {
+            "id": 1,
+            "titulo": "Tarea 1",
+            "descripcion": "Descripción de la tarea 1",
+            "completada": false
+         }
+      ]
+   },
+   {
+      "id": 8,
+      "mes": "Agosto",
+      "tareas": [
+         {
+            "id": 1,
+            "titulo": "Tarea 1",
+            "descripcion": "Descripción de la tarea 1",
+            "completada": false
+         }
+      ]
+   },
+   {
+      "id": 9,
+      "mes": "Septiembre",
+      "tareas": [
+         {
+            "id": 1,
+            "titulo": "Tarea 1",
+            "descripcion": "Descripción de la tarea 1",
+            "completada": false
+         }
+      ]
+   },
+   {
+      "id": 10,
+      "mes": "Octubre",
+      "tareas": [
+         {
+            "id": 1,
+            "titulo": "Tarea 1",
+            "descripcion": "Descripción de la tarea 1",
+            "completada": false
+         }
+      ]
+   },
+   {
+      "id": 11,
+      "mes": "Noviembre",
+      "tareas": [
+         {
+            "id": 1,
+            "titulo": "Tarea 1",
+            "descripcion": "Descripción de la tarea 1",
+            "completada": false
+         }
+      ]
+   },
+   {
+      "id": 12,
+      "mes": "Diciembre",
+      "tareas": [
+         {
+            "id": 1,
+            "titulo": "Tarea 1",
+            "descripcion": "Descripción de la tarea 1",
+            "completada": false
+         }
+      ]
+   }
+]
