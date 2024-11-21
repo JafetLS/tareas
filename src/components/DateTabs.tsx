@@ -5,7 +5,8 @@ import TabPanel from '@mui/lab/TabPanel';
 import { TabContext, TabList } from '@mui/lab';
 import tareas from '@/source/tareas.json';
 import TareaCheck from './TareaCheck';
-import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
+import { Fab } from '@mui/material';
+import AddIcon from '@mui/icons-material/Add';
 
 export default function DateTabs() {
    const [value, setValue] = React.useState('0');
@@ -15,9 +16,15 @@ export default function DateTabs() {
    };
 
    return (
-      <div>
+      <Box
+         sx={{
+            bgcolor: 'background.paper',
+            width: 500,
+            position: 'relative',
+            minHeight: 200,
+         }}
+      >
          <TabContext value={value}>
-            <LibraryAddIcon />
             <Box
                sx={{
                   maxWidth: { xs: 320, sm: 480 },
@@ -63,7 +70,46 @@ export default function DateTabs() {
                   key={tareas[0].mes}
                />
             </TabPanel>
+            <TabPanel value="2">
+               <TareaCheck
+                  tareas={tareas[1].tareas}
+                  label={tareas[1].mes}
+                  key={tareas[1].mes}
+               />
+            </TabPanel>
+            <TabPanel value="3">
+               <TareaCheck
+                  tareas={tareas[2].tareas}
+                  label={tareas[2].mes}
+                  key={tareas[2].mes}
+               />
+            </TabPanel>
+            <TabPanel value="4">
+               <TareaCheck
+                  tareas={tareas[3].tareas}
+                  label={tareas[3].mes}
+                  key={tareas[3].mes}
+               />
+            </TabPanel>
+            <TabPanel value="5">
+               <TareaCheck
+                  tareas={tareas[4].tareas}
+                  label={tareas[4].mes}
+                  key={tareas[4].mes}
+               />
+            </TabPanel>
+            <TabPanel value="6">
+               <TareaCheck
+                  tareas={tareas[5].tareas}
+                  label={tareas[5].mes}
+                  key={tareas[5].mes}
+               />
+            </TabPanel>
          </TabContext>
-      </div>
+
+         <Fab color="primary" aria-label="add">
+            <AddIcon />
+         </Fab>
+      </Box>
    );
 }
